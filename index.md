@@ -62,7 +62,34 @@ High-resolution (HR) videos play a crucial role in many computer vision applicat
 ## Architecture
 <img src="./assets/pipeline.png" width="1000"/>
 
-We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: $$\{\mathbf{I}^{\text{LR}}_{t}|t = 1, 2, \ldots, T\}$$ (where $$T$$ is the total number of frames, and $$\mathbf{I}^{\text{LR}}_{t}$$ represents a LR frame in the video) and a high-resolution grid $$\mathbf{r}^{\text{HR}}\in\mathbb{R}^2$$ specifying the spatial coordinates, VR-INR aims to produce high-resolution (HR) videos $$\{\mathbf{I}^{\text{HR}}_{t}|t = 1, 2, \ldots, T\}$$. First, we employ hierarchical texture encoding network to extract and encode multi-scale local patches into spatial-temporal-texture feature representations $$\mathbf{F}_{\text{STT}}$$. For each target high-resolution coordinate $$\mathbf{r}^{\text{HR}}$$ at frame $$t$$, we retrieve a compact set of neighboring feature vectors from a spatial hash table using implicit hashing, and efficiently interpolate these vectors using adaptively learned weights to generate robust implicit features $$\mathbf{v}^l$$. We then integrate these multi-resolution features $$\{\mathbf{v}^l\}_{l=1}^L$$ through a top-down attention mechanism, which sequentially refines and combines feature representations from coarse to fine resolutions. Finally, we decode the consolidated feature representations $$\mathbf{v}^{\text{HR}}$$ into RGB values using a multi-layer perceptron (MLP), generating the final HR video frames $$\mathbf{I}^{\text{HR}}_{t}$$.
+We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
+$$
+\{\mathbf{I}^{\text{LR}}_{t}|t = 1, 2, \ldots, T\}
+$$
+ (where $$T$$ is the total number of frames, and 
+$$
+ \mathbf{I}^{\text{LR}}_{t}
+$$
+  represents a LR frame in the video) and a high-resolution grid 
+$$
+  \mathbf{r}^{\text{HR}}\in\mathbb{R}^2
+$$
+ specifying the spatial coordinates, VR-INR aims to produce high-resolution (HR) videos 
+$$
+\{\mathbf{I}^{\text{HR}}_{t}|t = 1, 2, \ldots, T\}
+$$
+. First, we employ hierarchical texture encoding network to extract and encode multi-scale local patches into spatial-temporal-texture feature representations $$\mathbf{F}_{\text{STT}}$$. For each target high-resolution coordinate 
+$$
+\mathbf{r}^{\text{HR}}
+$$
+ at frame 
+$$
+ t
+$$, we retrieve a compact set of neighboring feature vectors from a spatial hash table using implicit hashing, and efficiently interpolate these vectors using adaptively learned weights to generate robust implicit features 
+$$
+\mathbf{v}^l
+$$
+. We then integrate these multi-resolution features $$\{\mathbf{v}^l\}_{l=1}^L$$ through a top-down attention mechanism, which sequentially refines and combines feature representations from coarse to fine resolutions. Finally, we decode the consolidated feature representations $$\mathbf{v}^{\text{HR}}$$ into RGB values using a multi-layer perceptron (MLP), generating the final HR video frames $$\mathbf{I}^{\text{HR}}_{t}$$.
 
 ## Results
 <!-- Two Photon Calcium Imaging | Fluorescence Microscopy
