@@ -1,2 +1,5 @@
 # theme: jekyll-theme-slate
-title: Unsupervised Microscopy Video Denoising
+title: Implicit Neural Representation for Video Restoration
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
