@@ -69,7 +69,7 @@ We propose VR-INR, a novel video restoration approach based on Implicit Neural R
 ![](./assets/standard.gif)  |  ![](./assets/GOWT1.gif) -->
 
 ## Video SuperResolution
- <img src="./assets/SR_Comp_VID4_walk_x8.mp4" width="1000"/>
+ <img src="./assets/suppl_Gopro.png" width="1000"/>
 
 <table>
  <tr>
