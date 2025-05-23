@@ -8,6 +8,28 @@ title: "Implicit Neural Representation for Video Restoration"
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
+<!-- ✅ Add in your index.md just after the front matter `---` -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<style>
+.link_button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+}
+.link_button:hover {
+  background-color: #0056b3;
+}
+</style>
+
 
 <center>
 
@@ -17,15 +39,15 @@ title: "Implicit Neural Representation for Video Restoration"
 <table style="border: none; display: initial;">
 <tr style="border: none;">
 <td style="border: none;"><a href="https://maryaiyetigbo.github.io/">Mary Damilola Aiyetigbo</a><sup>1</sup></td>
-<td style="border: none;"><a href="wanqiy@clemson.edu">Wanqi Yuan</a><sup>1</sup></td>
-<td style="border: none;"><a href="luofeng@clemson.edu">Feng Luo</a><sup>1</sup></td>
-<td style="border: none;"><a href="nianyil@clemson.edu">Nianyi Li</a><sup>1</sup></td>
+<td style="border: none;"><a href="mailto:wanqiy@clemson.edu">Wanqi Yuan</a></td>
+<td style="border: none;"><a href="mailto:luofeng@clemson.edu">Feng Luo</a></td>
+<td style="border: none;"><a href="mailto:nianyil@clemson.edu">Nianyi Li</a></td>
 </tr>
 </table>
 <br>
 <table style="border: none; display: initial;">
 <tr style="border: none;">
-<td style="border: none;"><sup>1</sup>Clemson University</td>
+<td style="border: none;">Clemson University</td>
 <!-- <td style="border: none;"><sup>2</sup>MUSC</td> -->
 </tr>
 </table>
