@@ -10,6 +10,9 @@ title: "Implicit Neural Representation for Video Restoration"
 
 
 <center>
+
+<h1>Implicit Neural Representation for Video Restoration</h1>
+
 <!-- <h1 style="display: block;">Unsupervised Microscopy Video Denoising</h1> -->
 <table style="border: none; display: initial;">
 <tr style="border: none;">
