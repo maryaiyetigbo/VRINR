@@ -81,11 +81,17 @@ title: "Implicit Neural Representation for Video Restoration"
 
 # Abstract
 
-High-resolution (HR) videos play a crucial role in many computer vision applications.  Although existing video restoration (VR) methods can significantly enhance video quality by exploiting temporal information across video frames, they are typically trained for fixed upscalling factors and lack the flexibility to handle scales or degradations beyond their training distribution. In this paper, we introduce VR-INR, a novel video restoration approach based on Implicit Neural Representations (INRs) that is trained only on a single upscalling factor ($\times 4$) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
+High-resolution (HR) videos play a crucial role in many computer vision applications.  Although existing video restoration (VR) methods can significantly enhance video quality by exploiting temporal information across video frames, they are typically trained for fixed upscalling factors and lack the flexibility to handle scales or degradations beyond their training distribution. In this paper, we introduce VR-INR, a novel video restoration approach based on Implicit Neural Representations (INRs) that is trained only on a single upscalling factor (
+$$
+\times 4
+$$
+) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
 
 
 ## Architecture
+<center>
 <img src="./assets/pipeline.png" width="1000"/>
+</center>
 
 We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
 $$
@@ -126,7 +132,9 @@ $$
 ![](./assets/standard.gif)  |  ![](./assets/GOWT1.gif) -->
 
 <!-- ## Video SuperResolution -->
+<center>
  <img src="./assets/suppl_Gopro.png" width="1000"/>
+ </center>
 
 <!-- <table>
  <tr>
@@ -151,11 +159,8 @@ $$
 </table> -->
 
 
- <!-- Bobblehead           |  Runner
-:-------------------------:|:-------------------------:
-![](./assets/YTHFR_Gaussian50_bobblehead.gif)  |  ![](./assets/YTHFR_Gaussian50_1Runner.gif) --> -->
 
 <!-- ###
 ![result](./assets/results.png) -->
 
-<!-- **Performance in Denoising Synthetic Noise.** This table presents a comparison of average PSNR/SSIM values of denoised performance on LIVE-YT-HFR datasets on different noise types and intensities. Our method demonstrates superior performance in most cases and remains highly competitive with the supervised methods.
+<!-- **Performance in Denoising Synthetic Noise.** This table presents a comparison of average PSNR/SSIM values of denoised performance on LIVE-YT-HFR datasets on different noise types and intensities. Our method demonstrates superior performance in most cases and remains highly competitive with the supervised methods. -->
