@@ -38,7 +38,7 @@ title: "Implicit Neural Representation for Video Restoration"
 <!-- <h1 style="display: block;">Unsupervised Microscopy Video Denoising</h1> -->
 <table style="border: none; display: initial;">
 <tr style="border: none;">
-<td style="border: none;"><a href="https://maryaiyetigbo.github.io/">Mary Damilola Aiyetigbo</a><sup>1</sup></td>
+<td style="border: none;"><a href="https://maryaiyetigbo.github.io/">Mary Damilola Aiyetigbo</a></td>
 <td style="border: none;"><a href="mailto:wanqiy@clemson.edu">Wanqi Yuan</a></td>
 <td style="border: none;"><a href="mailto:luofeng@clemson.edu">Feng Luo</a></td>
 <td style="border: none;"><a href="mailto:nianyil@clemson.edu">Nianyi Li</a></td>
@@ -86,6 +86,11 @@ $$
 \times 4
 $$
 ) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
+
+
+<center>
+<img src="./assets/ArbitraryScales.gif" width="1000"/>
+</center>
 
 
 ## Architecture
