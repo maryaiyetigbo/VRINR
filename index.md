@@ -89,7 +89,7 @@ $$
 
 
 <center>
-<img src="./assets/ArbitraryScales_large.gif" width="1000"/>
+<img src="./assets/ArbitraryScales_large.gif" width="100%"/>
 </center>
 
 
