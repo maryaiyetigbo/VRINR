@@ -30,6 +30,18 @@ title: "Implicit Neural Representation for Video Restoration"
 }
 </style>
 
+<!-- .link_button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+} -->
+
+
 
 <center>
 
@@ -54,7 +66,7 @@ title: "Implicit Neural Representation for Video Restoration"
 
 <br>
 
-<table style="border: none;">
+<!-- <table style="border: none;">
   <tr style="border: none;">
     <td style="border: none; padding: 0 20px;">
       <a href="#" style="color: #ffffff; text-decoration: none;">
@@ -71,7 +83,21 @@ title: "Implicit Neural Representation for Video Restoration"
       </a>
     </td>
   </tr>
-</table>
+</table> -->
+
+<!-- Centered Paper and Code buttons -->
+<div style="display: flex; justify-content: center; gap: 40px; margin: 20px 0;">
+  <a href="#" style="color: #ffffff; text-decoration: none;">
+    <div class="link_button">
+      <i class="bi bi-file-earmark-richtext"></i> Paper
+    </div>
+  </a>
+  <a href="https://github.com/maryaiyetigbo/VRINR" style="color: #ffffff; text-decoration: none;">
+    <div class="link_button">
+      <i class="bi bi-github"></i> Code
+    </div>
+  </a>
+</div>
 
 <img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
 
