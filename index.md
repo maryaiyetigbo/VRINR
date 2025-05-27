@@ -89,7 +89,7 @@ $$
 
 
 <center>
-<img src="./assets/ArbitraryScales_large.gif" width="100%"/>
+<img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
 </center>
 
 
@@ -163,6 +163,10 @@ $$
 
 
 ## Zero-Shot Denoising
+### Poisson Noise
+<img src="./assets/poisson.gif" width="100%"/>
+### Gaussian Noise
+<img src="./assets/gaussian.gif" width="100%"/>
 <table style="border: none;">
  <tr style="border: none;"><th align="left" style="border: none;"> Poisson Noise </th></tr>
  <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/poisson.gif" width="100%"/> </td></tr>
@@ -173,6 +177,9 @@ $$
 
 
 ## Video Reonstruction
-![result](./assets/vid_recon1.gif)
+<center>
+<img src="./assets/vid_recon1.gif" width="100%"/>
+<!-- ![result](./assets/vid_recon1.gif) -->
+</center>
 
 <!-- **Performance in Denoising Synthetic Noise.** This table presents a comparison of average PSNR/SSIM values of denoised performance on LIVE-YT-HFR datasets on different noise types and intensities. Our method demonstrates superior performance in most cases and remains highly competitive with the supervised methods. -->
