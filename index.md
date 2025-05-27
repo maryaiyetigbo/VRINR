@@ -76,8 +76,6 @@ title: "Implicit Neural Representation for Video Restoration"
 </center>
 
 
-<!-- ## Two Photon Calcium Imaging
- <img src="./assets/highActivityb.gif" width="1000"/> -->
 
 # Abstract
 
@@ -127,7 +125,9 @@ $$
 $$
 . We then integrate these multi-resolution features $$\{\mathbf{v}^l\}_{l=1}^L$$ through a top-down attention mechanism, which sequentially refines and combines feature representations from coarse to fine resolutions. Finally, we decode the consolidated feature representations $$\mathbf{v}^{\text{HR}}$$ into RGB values using a multi-layer perceptron (MLP), generating the final HR video frames $$\mathbf{I}^{\text{HR}}_{t}$$.
 
+
 # Results
+## Video Super-Resolution
 <!-- Two Photon Calcium Imaging | Fluorescence Microscopy
 :-------------------------:|:-------------------------:
 <img src="./assets/standard.gif" width="400"/> | <img src="./assets/GOWT1.gif" width="400"/>
@@ -148,31 +148,19 @@ $$
 
 
 
-<!-- <table>
- <tr>
-  <th align="center"> Two Photon Calcium Imaging </th>
-  <th align="center"> Fluorescence Microscopy </th>
- </tr>
- <tr>
-  <td align="center"> <img src="./assets/standard.gif" width="500"/> </td>
-  <td align="center"> <img src="./assets/GOWT1.gif" width="500"/> </td>
- </tr>
-</table> -->
-
-
-
-
 ## Zero-Shot Denoising
 ### Poisson Noise
 <img src="./assets/poisson.gif" width="100%"/>
+
 ### Gaussian Noise
 <img src="./assets/gaussian.gif" width="100%"/>
-<table style="border: none;">
+
+<!-- <table style="border: none;">
  <tr style="border: none;"><th align="left" style="border: none;"> Poisson Noise </th></tr>
  <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/poisson.gif" width="100%"/> </td></tr>
  <tr style="border: none;"><th align="left" style="border: none;"> Gaussian Noise </th></tr>
  <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/gaussian.gif" width="100%"/> </td></tr>
-</table>
+</table> -->
 
 
 
@@ -181,5 +169,3 @@ $$
 <img src="./assets/vid_recon1.gif" width="100%"/>
 <!-- ![result](./assets/vid_recon1.gif) -->
 </center>
-
-<!-- **Performance in Denoising Synthetic Noise.** This table presents a comparison of average PSNR/SSIM values of denoised performance on LIVE-YT-HFR datasets on different noise types and intensities. Our method demonstrates superior performance in most cases and remains highly competitive with the supervised methods. -->
