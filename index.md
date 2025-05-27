@@ -54,25 +54,26 @@ title: "Implicit Neural Representation for Video Restoration"
 
 <br>
 
-
-<table style="border: none;">
-  <tr style="border: none;">
-    <td style="border: none; padding: 0 20px;">
-      <a href="#" style="color: #ffffff; text-decoration: none;">
-        <div class="link_button">
-          <i class="bi bi-file-earmark-richtext"></i> Paper
-        </div>
-      </a>
-    </td>
-    <td style="border: none; padding: 0 20px;">
-      <a href="https://github.com/maryaiyetigbo/VRINR" style="color: #ffffff; text-decoration: none;">
-        <div class="link_button">
-          <i class="bi bi-github"></i> Code
-        </div>
-      </a>
-    </td>
-  </tr>
-</table>
+<center>
+  <table style="border: none;">
+    <tr style="border: none;">
+      <td style="border: none; padding: 0 20px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;">
+          <div class="link_button">
+            <i class="bi bi-file-earmark-richtext"></i> Paper
+          </div>
+        </a>
+      </td>
+      <td style="border: none; padding: 0 20px;">
+        <a href="https://github.com/maryaiyetigbo/VRINR" style="color: #ffffff; text-decoration: none;">
+          <div class="link_button">
+            <i class="bi bi-github"></i> Code
+          </div>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
 
 
 
