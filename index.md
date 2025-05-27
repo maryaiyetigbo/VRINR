@@ -54,27 +54,34 @@ title: "Implicit Neural Representation for Video Restoration"
 
 <br>
 
-<table style="border: none; display: initial;">
-<tr style="border: none;">
-<td style="border: none;">
-<a href="#" style="color: #ffffff">
-<div class="link_button">
-<i class="bi bi-file-earmark-richtext"></i> Paper
-</div>
-</a>
-</td>
-<td style="border: none; display: initial;">
-<a href="https://github.com/maryaiyetigbo/VRINR" style="color: #ffffff">
-<div class="link_button">
-<i class="bi bi-github"></i> Code
-</div>
-</a>
-</td>
-</tr>
+
+<table style="border: none;">
+  <tr style="border: none;">
+    <td style="border: none; padding: 0 20px;">
+      <a href="#" style="color: #ffffff; text-decoration: none;">
+        <div class="link_button">
+          <i class="bi bi-file-earmark-richtext"></i> Paper
+        </div>
+      </a>
+    </td>
+    <td style="border: none; padding: 0 20px;">
+      <a href="https://github.com/maryaiyetigbo/VRINR" style="color: #ffffff; text-decoration: none;">
+        <div class="link_button">
+          <i class="bi bi-github"></i> Code
+        </div>
+      </a>
+    </td>
+  </tr>
 </table>
+
+
 
 </center>
 
+
+<center>
+<img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
+</center>
 
 
 # Abstract
@@ -86,9 +93,9 @@ $$
 ) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
 
 
-<center>
+<!-- <center>
 <img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
-</center>
+</center> -->
 
 
 # Architecture
