@@ -93,9 +93,9 @@ $$
 </center>
 
 
-## Architecture
+# Architecture
 <center>
-<img src="./assets/pipeline.png" width="1000"/>
+<img src="./assets/pipeline.png" width="100%"/>
 </center>
 
 We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
@@ -127,7 +127,7 @@ $$
 $$
 . We then integrate these multi-resolution features $$\{\mathbf{v}^l\}_{l=1}^L$$ through a top-down attention mechanism, which sequentially refines and combines feature representations from coarse to fine resolutions. Finally, we decode the consolidated feature representations $$\mathbf{v}^{\text{HR}}$$ into RGB values using a multi-layer perceptron (MLP), generating the final HR video frames $$\mathbf{I}^{\text{HR}}_{t}$$.
 
-## Results
+# Results
 <!-- Two Photon Calcium Imaging | Fluorescence Microscopy
 :-------------------------:|:-------------------------:
 <img src="./assets/standard.gif" width="400"/> | <img src="./assets/GOWT1.gif" width="400"/>
@@ -138,8 +138,15 @@ $$
 
 <!-- ## Video SuperResolution -->
 <center>
- <img src="./assets/suppl_Gopro.png" width="1000"/>
+ <img src="./assets/gopro.gif" width="100%"/>
  </center>
+
+
+ <center>
+ <img src="./assets/vid4.gif" width="100%"/>
+ </center>
+
+
 
 <!-- <table>
  <tr>
@@ -155,17 +162,17 @@ $$
 
 
 
-<!-- ## Results on Natural Videos
+## Zero-Shot Denoising
 <table style="border: none;">
- <tr style="border: none;"><th align="left" style="border: none;"> Bobblehead </th></tr>
- <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/YTHFR_Gaussian50_bobblehead.gif" width="1000"/> </td></tr>
- <tr style="border: none;"><th align="left" style="border: none;"> Runner </th></tr>
- <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/YTHFR_Gaussian50_1Runner.gif" width="1000"/> </td></tr>
-</table> -->
+ <tr style="border: none;"><th align="left" style="border: none;"> Poisson Noise </th></tr>
+ <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/poisson.gif" width="100%"/> </td></tr>
+ <tr style="border: none;"><th align="left" style="border: none;"> Gaussian Noise </th></tr>
+ <tr style="border: none;"><td align="left" style="border: none;"> <img src="./assets/gaussian.gif" width="100%"/> </td></tr>
+</table>
 
 
 
-<!-- ###
-![result](./assets/results.png) -->
+## Video Reonstruction
+![result](./assets/vid_recon1.gif)
 
 <!-- **Performance in Denoising Synthetic Noise.** This table presents a comparison of average PSNR/SSIM values of denoised performance on LIVE-YT-HFR datasets on different noise types and intensities. Our method demonstrates superior performance in most cases and remains highly competitive with the supervised methods. -->
