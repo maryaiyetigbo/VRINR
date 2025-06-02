@@ -99,7 +99,7 @@ title: "Implicit Neural Representation for Video Restoration"
   </a>
 </div>
 
-<img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
+<img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
 
 </center>
 
