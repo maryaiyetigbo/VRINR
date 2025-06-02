@@ -110,12 +110,14 @@ We introduce VR-INR, a novel video restoration approach based on Implicit Neural
 $$
 \times 4
 $$
-) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
+) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. 
+
+<!-- Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy. -->
 
 
 # Architecture
 <center>
-<img src="./assets/pipeline.png" width="100%"/>
+<img src="./assets/pipeline.png" width="90%"/>
 </center>
 
 We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
