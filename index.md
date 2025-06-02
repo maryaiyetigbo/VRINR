@@ -106,6 +106,13 @@ title: "Implicit Neural Representation for Video Restoration"
         <div style="width: 33.3%; text-align: center; margin-bottom: 10px;" class="title is-5">VideoINR (ours)</div> 
 </div>
 
+<div style="display: flex;">
+  <div style="width: 33.3%; text-align: center; margin-bottom: 10px; font-size: 20px;" class="title is-5">Pixels</div> 
+  <div style="width: 33.3%; text-align: center; margin-bottom: 10px; font-size: 20px;" class="title is-5">Bilinear resize</div> 
+  <div style="width: 33.3%; text-align: center; margin-bottom: 10px; font-size: 20px;" class="title is-5">VideoINR (ours)</div> 
+</div>
+
+
 <img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
 
 </center>
