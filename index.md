@@ -99,30 +99,10 @@ title: "Implicit Neural Representation for Video Restoration"
   </a>
 </div>
 
-
- <div style="display: flex;">
-        <div style="width: 33.3%; text-align: center; margin-bottom: 10px;" class="title is-5">Pixels</div> 
-        <div style="width: 33.3%; text-align: center; margin-bottom: 10px;" class="title is-5">Bilinear resize</div> 
-        <div style="width: 33.3%; text-align: center; margin-bottom: 10px;" class="title is-5">VideoINR (ours)</div> 
-</div>
-
-<img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
-
-<div style="display: flex;">
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 30px;" class="title is-5">Low_Res</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 30px;" class="title is-5">VideoINR</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 30px;" class="title is-5">SAVSR</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 30px;" class="title is-5">VR-INR (ours)</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 30px;" class="title is-5">GT High_Res</div> 
-</div>
-
-
-
-
 </center>
 
 
-# Abstract
+<!-- # Abstract -->
 
 High-resolution (HR) videos play a crucial role in many computer vision applications.  Although existing video restoration (VR) methods can significantly enhance video quality by exploiting temporal information across video frames, they are typically trained for fixed upscalling factors and lack the flexibility to handle scales or degradations beyond their training distribution. In this paper, we introduce VR-INR, a novel video restoration approach based on Implicit Neural Representations (INRs) that is trained only on a single upscalling factor (
 $$
@@ -131,15 +111,25 @@ $$
 ) but generalizes effectively to arbitrary, unseen super-resolution scales at the test time. Notably, VR-INR also performs zero-shot denoising on noisy input, despite never having seen noisy data during training. Our methods employs a hierarchical spatial-temporal-texture encoding framework coupled with multi-resolution implicit hash encoding, enabling adaptive decoding of hight-resolution and noise-suppressed frames from low-resolution inputs at any desired magnification. Experimental results show that VR‑INR consistently maintains high-quality reconstructions at unseen scales and noise during training, significantly outperforming state‑of‑the‑art approaches in sharpness, detail preservation, and denoising efficacy.
 
 
-<!-- <center>
-<img src="./assets/ArbitraryScales_medium.gif" width="100%"/>
-</center> -->
-
-
 # Architecture
 <center>
 <img src="./assets/pipeline.png" width="100%"/>
 </center>
+
+
+<center>
+<img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
+
+<div style="display: flex;">
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">Low_Res</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VideoINR</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">SAVSR</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VR-INR (ours)</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">GT High_Res</div> 
+</div>
+</center>
+
+
 
 We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
 $$
