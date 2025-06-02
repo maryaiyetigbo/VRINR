@@ -104,7 +104,9 @@ title: "Implicit Neural Representation for Video Restoration"
 
 <!-- # Abstract -->
 
-High-resolution (HR) videos play a crucial role in many computer vision applications.  Although existing video restoration (VR) methods can significantly enhance video quality by exploiting temporal information across video frames, they are typically trained for fixed upscalling factors and lack the flexibility to handle scales or degradations beyond their training distribution. In this paper, we introduce VR-INR, a novel video restoration approach based on Implicit Neural Representations (INRs) that is trained only on a single upscalling factor (
+<!-- High-resolution (HR) videos play a crucial role in many computer vision applications.  Although existing video restoration (VR) methods can significantly enhance video quality by exploiting temporal information across video frames, they are typically trained for fixed upscalling factors and lack the flexibility to handle scales or degradations beyond their training distribution. In this paper,  -->
+
+We introduce VR-INR, a novel video restoration approach based on Implicit Neural Representations (INRs) that is trained only on a single upscalling factor (
 $$
 \times 4
 $$
@@ -115,21 +117,6 @@ $$
 <center>
 <img src="./assets/pipeline.png" width="100%"/>
 </center>
-
-
-<center>
-<img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
-
-<div style="display: flex;">
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">Low_Res</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VideoINR</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">SAVSR</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VR-INR (ours)</div> 
-  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">GT High_Res</div> 
-</div>
-</center>
-
-
 
 We propose **VR-INR**, a novel video restoration approach based on Implicit Neural Representations. VR-INR is trained only on clean data for super-resolution but generalizes effectively to arbitrary, unseen super-resolution scales at test time. Given an input sequence of low-resolution (LR) video: 
 $$
@@ -159,6 +146,23 @@ $$
 \mathbf{v}^l
 $$
 . We then integrate these multi-resolution features $$\{\mathbf{v}^l\}_{l=1}^L$$ through a top-down attention mechanism, which sequentially refines and combines feature representations from coarse to fine resolutions. Finally, we decode the consolidated feature representations $$\mathbf{v}^{\text{HR}}$$ into RGB values using a multi-layer perceptron (MLP), generating the final HR video frames $$\mathbf{I}^{\text{HR}}_{t}$$.
+
+
+<center>
+<h1>Zooming in on Arbitrary Scales</h1>
+<img src="./assets/ArbitraryScalesZoom.gif" width="100%"/>
+
+<div style="display: flex;">
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">Low_Res</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VideoINR</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">SAVSR</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">VR-INR (ours)</div> 
+  <div style="width: 20.0%; text-align: center; margin-bottom: 10px; font-size: 25px;" class="title is-5">GT High_Res</div> 
+</div>
+</center>
+
+
+
 
 
 # Results
